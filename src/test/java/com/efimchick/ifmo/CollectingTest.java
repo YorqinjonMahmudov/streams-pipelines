@@ -136,6 +136,8 @@ public class CollectingTest {
         assertEquals(52.166666666666664, new Collecting().averageTotalScore(historyResults(new Random(9821))), 0.001);
     }
 
+
+
     public void assertMapEquals(Map<String, Double> expected, Map<String, Double> actual) {
         assertEquals("Map sizes don't match!", expected.size(), actual.size());
         for (String key: expected.keySet()) {
@@ -213,6 +215,7 @@ public class CollectingTest {
                 ),
                 new Collecting().defineMarks(historyResults(new Random(753))));
     }
+
 
     @Test
     public void testEasiestTask() {
@@ -303,6 +306,7 @@ public class CollectingTest {
                                 .collect(toMap(
                                         task -> task,
                                         task -> random.nextInt(51) + 50))));
+
     }
 
 
